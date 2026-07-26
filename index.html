@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portal de exercícios práticos de manutenção industrial e metrologia do SENAI."
+    />
+    <title>Portal de Exercícios - SENAI</title>
+    <style>
+      :root {
+        --primary: #004a8d;
+        --secondary: #f4f7fb;
+        --text: #1f2937;
+        --border: #d8e2ec;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--text);
+        background: var(--secondary);
+        line-height: 1.6;
+      }
+
+      header {
+        background: var(--primary);
+        color: #fff;
+        padding: 1.5rem 1.25rem;
+      }
+
+      .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 1.25rem;
+      }
+
+      .hero {
+        background: #fff;
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .exercise-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 1rem;
+      }
+
+      .card {
+        background: #fff;
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 1.25rem;
+      }
+
+      .card h2 {
+        margin-top: 0;
+      }
+
+      .card a {
+        display: inline-block;
+        margin-top: 0.75rem;
+        color: var(--primary);
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      .card a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Portal de Exercícios - SENAI</h1>
+        <p>Manutenção industrial e metrologia</p>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero" aria-labelledby="hero-title">
+        <h2 id="hero-title">Bem-vindo ao portal</h2>
+        <p>
+          Este espaço reúne atividades práticas para apoiar o estudo de conceitos
+          fundamentais em manutenção industrial e metrologia.
+        </p>
+      </section>
+
+      <section class="exercise-grid" aria-label="Lista de exercícios">
+        <article class="card">
+          <h2>Metrologia</h2>
+          <p>Exercício prático com utilização de paquímetro.</p>
+          <a href="exercicios/paquimetro.html">Acessar exercício</a>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
